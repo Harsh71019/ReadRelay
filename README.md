@@ -8,6 +8,15 @@ X4 through the included CrossPoint firmware integration.
 See [docs/apple-watch-remote.md](docs/apple-watch-remote.md) for the Bluetooth
 protocol, build instructions, installation steps, and current limitations.
 
+## Apple Watch app
+
+Swipe vertically between the page-turn remote, live book progress, and the
+current reading session.
+
+| Remote | Book | Session |
+| :---: | :---: | :---: |
+| <img src="docs/images/readrelay/remote.png" alt="ReadRelay page-turn remote" width="220"> | <img src="docs/images/readrelay/book.png" alt="ReadRelay book progress" width="220"> | <img src="docs/images/readrelay/session.png" alt="ReadRelay reading-session statistics" width="220"> |
+
 ## CrossPoint firmware base
 
 [![Fund contributors](https://img.shields.io/badge/%F0%9F%91%91_Fund_contributors-royalty.dev-BB953A?style=for-the-badge&labelColor=1a1a1a)](https://app.royalty.dev/crosspoint-reader/crosspoint-reader)
