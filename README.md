@@ -305,6 +305,14 @@ Want to build your own device? Be sure to check out the [de-link](https://github
 
 ---
 
+## Support ReadRelay
+
+ReadRelay is free and open source. If it made reading a little more enjoyable,
+you can support its continued development by
+[buying me a coffee](https://buymeacoffee.com/harsh710).
+
+---
+
 CrossPoint Reader is **not affiliated with Xteink or any device manufacturer**.
 
 Huge shoutout to [diy-esp32-epub-reader](https://github.com/atomic14/diy-esp32-epub-reader), which inspired this project.
