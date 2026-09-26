@@ -8,6 +8,7 @@
 #include <cstring>
 
 #include "MappedInputManager.h"
+#include "WatchRemote.h"
 #include "components/UITheme.h"
 
 namespace bleinput {
@@ -23,6 +24,7 @@ bool ensureStarted() {
   g_startInProgress = true;
   HalPowerManager::Lock powerLock;
   const bool ok = BleHid.begin(kHostName);
+  if (ok) watchremote::begin();
   g_startInProgress = false;
   return ok;
 }
@@ -34,6 +36,7 @@ bool startInProgress() { return g_startInProgress; }
 // allocate even after the user turns Bluetooth off.
 void stop() {
   HalPowerManager::Lock powerLock;
+  watchremote::end();
   BleHid.end();
 }
 

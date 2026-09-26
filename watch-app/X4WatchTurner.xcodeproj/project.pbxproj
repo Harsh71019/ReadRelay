@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A78F4E62C3B7493B569024 /* X4WatchTurnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EB465FC4C43687E36AEA46 /* X4WatchTurnerApp.swift */; };
+		243955FFA86B506715B3842F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86C09FC90EB6A84F5E237CC /* ContentView.swift */; };
+		E14A4512E3BC5701822FD0FC /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735029E3B3ED2ADFFB7F4D66 /* BluetoothController.swift */; };
+		FAE6374FD24378C3BA5C4DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC72CAADE380987584FF2DA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43F6F2B0682B2E7C0DE085C0 /* X4WatchTurner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X4WatchTurner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EB465FC4C43687E36AEA46 /* X4WatchTurnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X4WatchTurnerApp.swift; sourceTree = "<group>"; };
+		735029E3B3ED2ADFFB7F4D66 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
+		BB3B81051592D18C2F5AC37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CFC72CAADE380987584FF2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F86C09FC90EB6A84F5E237CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		485DE482A30BB40B9E12B186 /* X4WatchTurner */ = {
+			isa = PBXGroup;
+			children = (
+				CFC72CAADE380987584FF2DA /* Assets.xcassets */,
+				735029E3B3ED2ADFFB7F4D66 /* BluetoothController.swift */,
+				F86C09FC90EB6A84F5E237CC /* ContentView.swift */,
+				BB3B81051592D18C2F5AC37B /* Info.plist */,
+				45EB465FC4C43687E36AEA46 /* X4WatchTurnerApp.swift */,
+			);
+			path = X4WatchTurner;
+			sourceTree = "<group>";
+		};
+		4E7582D73186BAC196A83112 = {
+			isa = PBXGroup;
+			children = (
+				485DE482A30BB40B9E12B186 /* X4WatchTurner */,
+				9C7A5ACEE77C5D5BFE3763C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C7A5ACEE77C5D5BFE3763C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43F6F2B0682B2E7C0DE085C0 /* X4WatchTurner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50331DF5C20D000A03330EF1 /* X4WatchTurner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 735D1634B2C581BDE75EEB64 /* Build configuration list for PBXNativeTarget "X4WatchTurner" */;
+			buildPhases = (
+				F5022562FA62DFCFAABCEF56 /* Sources */,
+				0A1F75D6923E05DBDF07710E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = X4WatchTurner;
+			packageProductDependencies = (
+			);
+			productName = X4WatchTurner;
+			productReference = 43F6F2B0682B2E7C0DE085C0 /* X4WatchTurner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9301ADDD28E7600D68F257DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					50331DF5C20D000A03330EF1 = {
+						DevelopmentTeam = GK4J2Z44M8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E98BAC4A9C9C36BE217E311D /* Build configuration list for PBXProject "X4WatchTurner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4E7582D73186BAC196A83112;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9C7A5ACEE77C5D5BFE3763C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50331DF5C20D000A03330EF1 /* X4WatchTurner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A1F75D6923E05DBDF07710E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE6374FD24378C3BA5C4DD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5022562FA62DFCFAABCEF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14A4512E3BC5701822FD0FC /* BluetoothController.swift in Sources */,
+				243955FFA86B506715B3842F /* ContentView.swift in Sources */,
+				07A78F4E62C3B7493B569024 /* X4WatchTurnerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B142567149090B46FAD018C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = X4WatchTurner/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.X4WatchTurner;
+				PRODUCT_NAME = X4WatchTurner;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		693E899152206251520CCAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GK4J2Z44M8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		7C8B960E89128D6B3DCB55A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = X4WatchTurner/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.X4WatchTurner;
+				PRODUCT_NAME = X4WatchTurner;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		D08907FF4854B38D33D576E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GK4J2Z44M8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		735D1634B2C581BDE75EEB64 /* Build configuration list for PBXNativeTarget "X4WatchTurner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C8B960E89128D6B3DCB55A1 /* Debug */,
+				3B142567149090B46FAD018C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E98BAC4A9C9C36BE217E311D /* Build configuration list for PBXProject "X4WatchTurner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693E899152206251520CCAA5 /* Debug */,
+				D08907FF4854B38D33D576E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9301ADDD28E7600D68F257DB /* Project object */;
+}

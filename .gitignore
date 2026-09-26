@@ -16,6 +16,9 @@ build
 /.cache
 .history/
 /.venv
+/dist/
+**/xcuserdata/
+*.xcuserstate
 *.local*
 *.cpfont
 lib/EpdFont/scripts/downloaded_fonts/

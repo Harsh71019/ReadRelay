@@ -1,0 +1,29 @@
+name: X4WatchTurner
+
+options:
+  bundleIdPrefix: com.harsh
+  deploymentTarget:
+    watchOS: "11.0"
+  xcodeVersion: "27.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: GK4J2Z44M8
+
+targets:
+  X4WatchTurner:
+    type: application
+    platform: watchOS
+    sources:
+      - path: X4WatchTurner
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.harsh.X4WatchTurner
+        PRODUCT_NAME: X4WatchTurner
+        INFOPLIST_FILE: X4WatchTurner/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    scheme:
+      testTargets: []

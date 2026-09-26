@@ -1,5 +1,7 @@
 #include "MappedInputManager.h"
 
+#include "WatchRemote.h"
+
 #include <GfxRenderer.h>
 
 #include <algorithm>
@@ -400,6 +402,26 @@ void MappedInputManager::pollBle() {
       }
       break;
     }
+  }
+
+  // Apple Watch commands arrive on NimBLE's callback task and are queued by
+  // WatchRemote. Convert them to the same momentary logical-button overlay used by
+  // HID remotes so every reader format follows the normal page-turn path.
+  watchremote::Command command;
+  while (watchremote::popCommand(command)) {
+    Button button;
+    switch (command) {
+      case watchremote::Command::NextPage:
+        button = Button::PageForward;
+        break;
+      case watchremote::Command::PreviousPage:
+        button = Button::PageBack;
+        break;
+      default:
+        continue;
+    }
+    blePressEdge[static_cast<uint8_t>(button)] = true;
+    bleActivityThisFrame = true;
   }
 }
 

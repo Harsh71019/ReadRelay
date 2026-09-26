@@ -1,8 +1,22 @@
-# CrossPoint Reader
+# ReadRelay
+
+ReadRelay is an Apple Watch reading companion for controlling supported e-readers
+over Bluetooth. Turn pages, track progress, monitor battery life, and view
+reading-session stats from your wrist. The current release supports the Xteink
+X4 through the included CrossPoint firmware integration.
+
+See [docs/apple-watch-remote.md](docs/apple-watch-remote.md) for the Bluetooth
+protocol, build instructions, installation steps, and current limitations.
+
+## CrossPoint firmware base
 
 [![Fund contributors](https://img.shields.io/badge/%F0%9F%91%91_Fund_contributors-royalty.dev-BB953A?style=for-the-badge&labelColor=1a1a1a)](https://app.royalty.dev/crosspoint-reader/crosspoint-reader)
 
-CrossPoint is open-source e-reader firmware - community-built, fully hackable, free forever. It's maintained by a growing community of developers and readers who believe your device should do what you want - not what a manufacturer decided for you.
+The firmware in this repository is based on
+[CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader), an
+open-source e-reader firmware maintained by its community. ReadRelay adds the
+Bluetooth service used by the companion watch app while preserving CrossPoint's
+MIT license and attribution.
 
 **Now running on:** ESP32C3-based Xteink [X4](https://www.xteink.com/products/xteink-x4) and [X3](https://www.xteink.com/products/xteink-x3).
 

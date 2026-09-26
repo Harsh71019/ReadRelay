@@ -17,6 +17,7 @@
 #include <WiFi.h>
 #include <builtinFonts/all.h>
 
+#include <algorithm>
 #include <cstring>
 
 #include "BleInput.h"
@@ -27,6 +28,7 @@
 #include "OpdsServerStore.h"
 #include "RecentBooksStore.h"
 #include "SdCardFontSystem.h"
+#include "WatchRemote.h"
 #include "activities/Activity.h"
 #include "activities/ActivityManager.h"
 #include "activities/settings/SdFirmwareUpdateActivity.h"
@@ -692,6 +694,21 @@ void loop() {
   const unsigned long activityStartTime = millis();
   activityManager.loop();
   const unsigned long activityDuration = millis() - activityStartTime;
+
+  // Keep the companion snapshot fresh without doing string work on every
+  // 10 ms loop. WatchRemote only notifies when the compact payload changes.
+  static unsigned long lastWatchStateUpdate = 0;
+  if (watchremote::isRunning() && millis() - lastWatchStateUpdate >= 500) {
+    lastWatchStateUpdate = millis();
+    const ScreenshotInfo info = activityManager.getScreenshotInfo();
+    const uint16_t battery = powerManager.getBatteryPercentage();
+    watchremote::updateReaderState(
+        static_cast<uint8_t>(info.readerType), info.title,
+        info.currentPage > 0 ? static_cast<uint32_t>(info.currentPage) : 0,
+        info.totalPages > 0 ? static_cast<uint32_t>(info.totalPages) : 0,
+        static_cast<uint8_t>(std::clamp(info.progressPercent, 0, 100)),
+        static_cast<uint8_t>(battery > 100 ? 100 : battery));
+  }
 
   const unsigned long loopDuration = millis() - loopStartTime;
   if (loopDuration > maxLoopDuration) {
